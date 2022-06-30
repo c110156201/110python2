@@ -1,9 +1,14 @@
-a = str(input("輸入五張牌:"))
-a1=[]
-a1=a.split(' ')
-A = 1
-J = 11
-Q = 12
-K = 13
-
-print(int(a[0])+int(a[1])+int(a[2])+int(a[3])+int(a[4]))
+sum=0
+for i in range(5):
+    a=input("請輸入五張牌")
+    if a=="A":
+        sum=sum+1
+    elif a=="K":
+        sum=sum+13
+    elif a=="Q":
+        sum=sum+12
+    elif a=="J":
+        sum=sum+11
+    else:
+        sum=sum+int(a)
+print(sum)
